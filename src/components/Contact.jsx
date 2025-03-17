@@ -1,14 +1,16 @@
-import { InstagramIcon, ZapIcon } from "lucide-react";
-
-function Contact() {
+function Contact({ marginTop }) {
   return (
-    <section className="flex flex-row items-center justify-center mt-[17.75rem] bg-green-800 text-white">
+    <section
+      className={`flex flex-row ${
+        marginTop === "yes" ? "mt-[17.75rem]" : "mt-0"
+      } items-center justify-center bg-green-800 text-white`}
+    >
       <div className="w-[80%] h-[12rem] grid grid-cols-2 mt-[3.5rem]">
         <div className="justify-self-start">
           <h3 className="text-[22.4px] font-bold">Variedades do Coco</h3>
           <p className="text-[17px] mt-[1.5rem]">
-            Trazendo os melhores produtos de coco até a sua porta <br /> desde
-            2022.
+            Trazendo os melhores produtos derivados do coco até a sua porta{" "}
+            <br /> desde 2022.
           </p>
         </div>
 

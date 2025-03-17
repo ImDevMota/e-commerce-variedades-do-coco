@@ -3,8 +3,8 @@ import bigImage from "../assets/imagem-grande.jpg";
 
 function Outdoor() {
   return (
-    <section className="text-white">
-      <div className="flex justify-center items-center pt-[179px]">
+    <section className="text-white pt-[11.2rem]">
+      <div className="flex justify-center items-center">
         <img
           className="flex w-[100%] h-[766px] brightness-50"
           src={bigImage}

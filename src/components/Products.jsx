@@ -28,7 +28,7 @@ function Products() {
 
             <div className="inline-flex items-center">
               <h3 className="text-[#166534] text-[20px] font-bold mt-[0.8rem]">
-                Água de Coco
+                Água de Coco (1L)
               </h3>
               <p className="text-[#166534] ml-auto font-bold mt-[0.8rem]">
                 R$10,00
@@ -52,10 +52,10 @@ function Products() {
 
             <div className="inline-flex items-center">
               <h3 className="text-[#166534] text-[20px] font-bold mt-[0.8rem]">
-                Óleo de Coco
+                Óleo de Coco (1L)
               </h3>
               <p className="text-[#166534] ml-auto font-bold mt-[0.8rem]">
-                R$XX,XX
+                R$85,00
               </p>
             </div>
 
@@ -75,7 +75,7 @@ function Products() {
                 Coco Verde
               </h3>
               <p className="text-[#166534] ml-auto font-bold mt-[0.8rem]">
-                R$XX,XX
+                R$1,60
               </p>
             </div>
 
@@ -96,10 +96,10 @@ function Products() {
 
             <div className="inline-flex items-center">
               <h3 className="text-[#166534] text-[20px] font-bold mt-[0.8rem]">
-                Leite de coco
+                Leite de coco (kg)
               </h3>
               <p className="text-[#166534] ml-auto font-bold mt-[0.8rem]">
-                R$XX,XX
+                R$12,00
               </p>
             </div>
 
@@ -120,10 +120,10 @@ function Products() {
 
             <div className="inline-flex items-center">
               <h3 className="text-[#166534] text-[20px] font-bold mt-[0.8rem]">
-                Coco Ralado
+                Coco Ralado (kg)
               </h3>
               <p className="text-[#166534] ml-auto font-bold mt-[0.8rem]">
-                R$XX,XX
+                R$12,00
               </p>
             </div>
 

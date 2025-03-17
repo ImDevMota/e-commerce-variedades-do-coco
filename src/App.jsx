@@ -5,12 +5,13 @@ import Button from "./components/Button";
 import Products from "./components/Products";
 import Info from "./components/Info";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="box-border m-0 p-0 font-sans">
+    <div className="box-border m-0 p-0 font-sans scroll-pt-[11.2rem]">
       <Header />
 
       <Outdoor />
@@ -19,13 +20,9 @@ function App() {
 
       <Info />
 
-      <Contact />
+      <Contact marginTop="yes" />
 
-      <footer className="flex py-[2rem] w-full text-center justify-center bg-green-800">
-        <p className="text-white text-[17px]">
-          © 2025 @ImDevMota. All rights reserved.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
