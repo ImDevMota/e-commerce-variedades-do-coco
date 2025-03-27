@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer className="flex py-[2rem] w-full text-center justify-center bg-green-800">
-      <p className="text-white text-[17px]">
+    <footer className="flex w-full h-[3.5rem] sm:h-[3.5rem] sm:mt-[-1px] text-center justify-center items-center bg-green-800">
+      <p className="text-white text-[15px] sm:text-[13px]">
         © 2025 @ImDevMota. All rights reserved.
       </p>
     </footer>
