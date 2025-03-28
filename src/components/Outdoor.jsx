@@ -1,9 +1,8 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import bigImage from "../assets/imagem-grande.jpg";
 
 function Outdoor() {
   return (
-    <section className="text-white pt-[11.2rem] sm:pt-[9rem]">
+    <section id="home" className="text-white pt-[11.2rem] sm:pt-[9rem]">
       <div className="flex justify-center items-center">
         <img
           className="flex w-[100%] h-[766px] brightness-50 sm:h-[20rem]"

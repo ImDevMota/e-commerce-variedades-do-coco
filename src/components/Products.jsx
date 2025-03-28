@@ -10,7 +10,10 @@ function Products() {
   const { onAddProduct } = useContext(ProductsContext);
 
   return (
-    <section className="flex flex-row justify-center items-center">
+    <section
+      id="products"
+      className="flex flex-row justify-center items-center"
+    >
       <div className="w-[76.65%] flex flex-col justify-center items-center">
         <div className="mt-[4rem]">
           <h2 className="flex justify-center items-center text-4xl text-[#964B00] mb-[1rem] font-bold sm:text-3xl">

@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ProductsContext } from "./ProductsProvider";
 
-function Header() {
+function Header({ page }) {
   const navigate = useNavigate();
 
   function onCartClick() {
@@ -13,6 +13,10 @@ function Header() {
   }
 
   const { cartCount } = useContext(ProductsContext);
+
+  const handleNavigation = (sectionId) => {
+    navigate("/", { state: { sectionId } });
+  };
 
   return (
     <header className="text-white sm:h-[9rem] w-full h-[11.2rem] flex flex-row z-[1000] justify-center items-center fixed bg-green-800 border-solid border-b-[22px] border-yellow-950">
@@ -28,7 +32,8 @@ function Header() {
             <li className="">
               <a
                 className="rounded-2xl hover:opacity-75 hover:bg-green-600 hover:p-4 sm:hover:p-0 sm:hover:bg-green-800 "
-                href="#"
+                href="#home"
+                onClick={() => handleNavigation("home")}
               >
                 Início
               </a>
@@ -36,7 +41,8 @@ function Header() {
             <li className="">
               <a
                 className="rounded-2xl hover:opacity-75 hover:bg-green-600 hover:p-4 sm:hover:p-0 sm:hover:bg-green-800"
-                href="#"
+                href="#products"
+                onClick={() => handleNavigation("products")}
               >
                 Produtos
               </a>
@@ -44,7 +50,8 @@ function Header() {
             <li className="">
               <a
                 className="rounded-2xl hover:opacity-75 hover:bg-green-600 hover:p-4 sm:hover:p-0 sm:hover:bg-green-800"
-                href="#"
+                href="#info"
+                onClick={() => handleNavigation("info")}
               >
                 Sobre Nós
               </a>
@@ -52,7 +59,8 @@ function Header() {
             <li className="">
               <a
                 className="rounded-2xl hover:opacity-75 hover:bg-green-600 hover:p-4 sm:hover:p-0 sm:hover:bg-green-800"
-                href="#"
+                href="#contact"
+                onClick={() => handleNavigation("contact")}
               >
                 Contato
               </a>

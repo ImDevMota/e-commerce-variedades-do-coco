@@ -1,6 +1,7 @@
 function Contact({ marginTop }) {
   return (
     <section
+      id="contact"
       className={`flex flex-row sm:mt-[0rem] sm:h-[22rem] ${
         marginTop === "yes" ? "mt-[17.75rem]" : "mt-0"
       } items-center justify-center bg-green-800 text-white`}

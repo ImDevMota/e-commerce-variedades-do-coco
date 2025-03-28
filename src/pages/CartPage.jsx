@@ -1,5 +1,5 @@
-import { useNavigate, useSearchParams } from "react-router-dom";
-import { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
 import React from "react";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
@@ -41,7 +41,7 @@ function CartPage() {
 
   return (
     <>
-      <Header />
+      <Header page="CartPage" />
 
       <section className="pt-[11.2rem] sm:pt-[7.5rem] flex justify-center w-full h-[140vh] text-black">
         <div className="inline-flex mt-[4rem] sm:flex sm:flex-col sm:relative">
@@ -156,7 +156,9 @@ function CartPage() {
                 Realizar Pedido
               </a>
               <button
-                onClick={() => navigate(-1)}
+                onClick={() =>
+                  navigate("/", { state: { sectionId: "products" } })
+                }
                 className="w-[22.2rem] h-[2.8rem] flex items-center justify-center border-[1px] text-[#00703C] rounded-md border-[#00703C] mx-auto hover:bg-[#c5c5c5]"
               >
                 Continuar Comprando

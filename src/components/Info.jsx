@@ -1,6 +1,6 @@
 function Info() {
   return (
-    <section className="flex flex-row justify-center items-center">
+    <section id="info" className="flex flex-row justify-center items-center">
       <div className="mt-[12rem]">
         <h2 className="flex justify-center items-center text-4xl sm:text-3xl sm:text-center text-[#964B00] mb-[0.8rem] font-bold">
           Por que escolher nossos Produtos?
