@@ -78,14 +78,14 @@ function CartPage() {
                 products.map((product) => (
                   <div className="flex flex-row flex-wrap mb-[1rem] w-[full]">
                     <div className="w-full inline-flex justify-between">
-                      <div className="relative sm:w-[8.8rem]">
+                      <div className="relative sm:w-[8.9rem]">
                         <div className="inline-flex">
                           <img
                             className="w-[5.65rem] h-[5rem] sm:w-[43px] sm:h-[43px]"
                             src={srcImg[product.id]} // passar a imagem no localstorage e verificar reload do localstorage
                             alt=""
                           />
-                          <h3 className="ml-4 sm:ml-[0.4rem] mt-[0.7rem] sm:mt-[0.4rem] text-[1.06rem] sm:text-[11px]">
+                          <h3 className="ml-4 sm:ml-[0.4rem] mt-[0.7rem] sm:mt-[0.35rem] text-[1.06rem] sm:text-[9.5px]">
                             {product.title}
                           </h3>
                         </div>
