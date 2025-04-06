@@ -189,7 +189,7 @@ function CartPage() {
               <div className="mt-[2rem]">
                 {products.length > 0 ? (
                   <a
-                    href=""
+                    href="#"
                     className="w-[22.2rem] sm:w-[100%] h-[2.8rem] flex items-center justify-center text-white mb-[1rem] bg-[#00703C] rounded-md hover:bg-green-900"
                   >
                     Realizar Pedido
