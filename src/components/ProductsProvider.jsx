@@ -21,6 +21,8 @@ export function ProductsProvider({ children }) {
     return savedTotalProducts ? JSON.parse(savedTotalProducts) : 0;
   });
 
+  const [visibility, setVisibility] = useState(false);
+
   function onAddProduct(title, price) {
     setProducts((prevProducts) => {
       const existingProduct = prevProducts.find(
@@ -171,6 +173,8 @@ export function ProductsProvider({ children }) {
         onIncreaseQuantityProduct,
         onDecreaseQuantityProduct,
         totalProducts,
+        visibility,
+        setVisibility,
       }}
     >
       {children}

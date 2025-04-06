@@ -10,22 +10,19 @@ function Products() {
   const { onAddProduct } = useContext(ProductsContext);
 
   return (
-    <section
-      id="products"
-      className="flex flex-row justify-center items-center"
-    >
-      <div className="w-[76.65%] flex flex-col justify-center items-center">
+    <section id="products" className="flex justify-center items-center">
+      <div className="w-[80%] flex flex-col justify-center items-center">
         <div className="mt-[4rem]">
-          <h2 className="flex justify-center items-center text-4xl text-[#964B00] mb-[1rem] font-bold sm:text-3xl">
+          <h2 className="flex justify-center items-center text-4xl text-[#964B00] mb-[1rem] text-center font-bold sm:text-3xl">
             Nossos Produtos
           </h2>
-          <p className="text-[#4B5563] mb-[50px] sm:text-[13px] sm:text-center">
+          <p className="text-[#4B5563] mb-[50px] text-center sm:text-[13px]">
             Descubra nossa seleção de produtos de coco premium, cuidadosamente
             selecionados para garantir qualidade e sabor.
           </p>
         </div>
 
-        <div className="grid grid-cols-3 text-white gap-x-[8rem] gap-y-[3rem] sm:flex sm:flex-col">
+        <div className="flex flex-wrap flex-row justify-center gap-x-[5.7rem] gap-y-[5rem]">
           <div className="flex flex-col w-[25rem] h-[28.6rem] sm:w-[22rem] sm:mx-auto p-4 bg-slate-300/40 rounded-lg shadow-xl shadow-gray-700/30 border border-gray-300 outline outline-1 outline-gray-200">
             <img
               className="w-96 h-64"
@@ -44,11 +41,11 @@ function Products() {
                 id="priceAguaDeCoco"
                 className="text-[#166534] ml-auto font-bold mt-[0.8rem]"
               >
-                R$10,00
+                R$5,00
               </p>
             </div>
 
-            <p className="text-[#4B5563] text-[15.6px] mt-[0.5rem]">
+            <p className="text-[#4B5563] h-[2.8rem] text-[15.6px] mt-[0.5rem]">
               Água de coco natural refrescante, perfeita para hidratação.
             </p>
             <button
@@ -58,7 +55,7 @@ function Products() {
                   document.getElementById("priceAguaDeCoco").innerText
                 )
               }
-              className="hover:bg-green-700 flex rounded-[7px] self-center items-center justify-center w-[23rem] sm:w-[20rem] h-[3rem] bg-[#16A34A] mt-[1.4rem]"
+              className="hover:bg-green-700 flex rounded-[7px] text-white self-center items-center justify-center w-[23rem] sm:w-[20rem] h-[3rem] bg-[#16A34A] mt-[1.2rem]"
             >
               Adicionar ao Carrinho
             </button>
@@ -86,7 +83,7 @@ function Products() {
               </p>
             </div>
 
-            <p className="text-[#4B5563] text-[15.6px] mt-[0.5rem]">
+            <p className="text-[#4B5563] h-[2.8rem] text-[15.6px] mt-[0.5rem]">
               Uma opção mais saudável e com diversas funcionalidades.
             </p>
             <button
@@ -96,7 +93,7 @@ function Products() {
                   document.getElementById("priceOleoDeCoco").innerText
                 )
               }
-              className="hover:bg-green-700 flex rounded-[7px] self-center items-center justify-center w-[23rem] sm:w-[20rem] h-[3rem] bg-[#16A34A] mt-[1.4rem]"
+              className="hover:bg-green-700 flex rounded-[7px] text-white self-center items-center justify-center w-[23rem] sm:w-[20rem] h-[3rem] bg-[#16A34A] mt-[1.2rem]"
             >
               Adicionar ao Carrinho
             </button>
@@ -120,7 +117,7 @@ function Products() {
               </p>
             </div>
 
-            <p className="text-[#4B5563] text-[15.6px] mt-[0.5rem]">
+            <p className="text-[#4B5563] h-[2.8rem] text-[15.6px] mt-[0.5rem]">
               Cocos verdes frescos, prontos para beber e aproveitar.
             </p>
             <button
@@ -130,13 +127,13 @@ function Products() {
                   document.getElementById("priceCocoVerde").innerText
                 )
               }
-              className="hover:bg-green-700 flex rounded-[7px] self-center items-center justify-center w-[23rem] sm:w-[20rem] h-[3rem] bg-[#16A34A] mt-[1.4rem]"
+              className="hover:bg-green-700 flex rounded-[7px] text-white self-center items-center justify-center w-[23rem] sm:w-[20rem] h-[3rem] bg-[#16A34A] mt-[1.2rem]"
             >
               Adicionar ao Carrinho
             </button>
           </div>
 
-          <div className=" flex flex-col w-[25rem] h-[28.6rem] sm:w-[22rem] sm:mx-auto p-4 bg-slate-300/40 rounded-lg shadow-xl shadow-gray-700/30 border border-gray-300 outline outline-1 outline-gray-200">
+          <div className="flex flex-col w-[25rem] h-[28.6rem] sm:w-[22rem] sm:mx-auto p-4 bg-slate-300/40 rounded-lg shadow-xl shadow-gray-700/30 border border-gray-300 outline outline-1 outline-gray-200">
             <img
               className="w-96 h-64"
               src={LeiteDeCoco}
@@ -158,7 +155,7 @@ function Products() {
               </p>
             </div>
 
-            <p className="text-[#4B5563] text-[15.6px] mt-[0.5rem]">
+            <p className="text-[#4B5563] h-[2.8rem] text-[15.6px] mt-[0.5rem]">
               Cremoso, perfeito para cozinhar e fazer vitaminas.
             </p>
             <button
@@ -168,13 +165,13 @@ function Products() {
                   document.getElementById("priceLeiteDeCoco").innerText
                 )
               }
-              className="hover:bg-green-700 flex rounded-[7px] self-center items-center justify-center w-[23rem] sm:w-[20rem] h-[3rem] bg-[#16A34A] mt-[1.4rem]"
+              className="hover:bg-green-700 flex rounded-[7px] text-white self-center items-center justify-center w-[23rem] sm:w-[20rem] h-[3rem] bg-[#16A34A] mt-[1.2rem]"
             >
               Adicionar ao Carrinho
             </button>
           </div>
 
-          <div className=" flex flex-col w-[25rem] h-[28.6rem] sm:w-[22rem] sm:mx-auto p-4 bg-slate-300/40 rounded-lg shadow-xl shadow-gray-700/30 border border-gray-300 outline outline-1 outline-gray-200">
+          <div className="flex flex-col w-[25rem] h-[28.6rem] sm:w-[22rem] sm:mx-auto p-4 bg-slate-300/40 rounded-lg shadow-xl shadow-gray-700/30 border border-gray-300 outline outline-1 outline-gray-200">
             <img
               className="w-96 h-64"
               src={CocoRalado}
@@ -196,7 +193,7 @@ function Products() {
               </p>
             </div>
 
-            <p className="text-[#4B5563] text-[15.6px] mt-[0.5rem]">
+            <p className="text-[#4B5563] h-[2.8rem] text-[15.6px] mt-[0.5rem]">
               Perfeito para o uso culinário.
             </p>
             <button
@@ -206,7 +203,7 @@ function Products() {
                   document.getElementById("priceCocoRalado").innerText
                 )
               }
-              className="hover:bg-green-700 flex rounded-[7px] self-center items-center justify-center w-[23rem] sm:w-[20rem] h-[3rem] bg-[#16A34A] mt-[1.4rem]"
+              className="hover:bg-green-700 flex rounded-[7px] text-white self-center items-center justify-center w-[23rem] sm:w-[20rem] h-[3rem] bg-[#16A34A] mt-[1.2rem]"
             >
               Adicionar ao Carrinho
             </button>

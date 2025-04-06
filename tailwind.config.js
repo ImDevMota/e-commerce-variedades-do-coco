@@ -7,7 +7,7 @@ export default {
       sm: { min: "320px", max: "425px" },
       md: { min: "426px", max: "768px" },
       lg: { min: "1024px", max: "1279px" },
-      xl: { min: "1280px" },
+      xl: { min: "768px", max: "1609px" },
     },
   },
   plugins: [],

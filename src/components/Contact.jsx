@@ -6,8 +6,8 @@ function Contact({ marginTop }) {
         marginTop === "yes" ? "mt-[17.75rem]" : "mt-0"
       } items-center justify-center bg-green-800 text-white`}
     >
-      <div className="w-[80%] h-[12rem] sm:h-[18.5rem] grid grid-cols-2 sm:flex sm:flex-col mt-[3.5rem]">
-        <div className="justify-self-start sm:justify-normal">
+      <div className="w-[80%] sm:h-[18.5rem] flex flex-row flex-wrap justify-between sm:flex sm:flex-col mt-[3.5rem]">
+        <div className="justify-self-start h-[6.5rem] sm:justify-normal mb-[2rem]">
           <h3 className="text-[22.4px] sm:text-[21px] font-bold">
             Variedades do Coco
           </h3>
@@ -17,7 +17,7 @@ function Contact({ marginTop }) {
           </p>
         </div>
 
-        <div className="ml-[20rem] sm:ml-0 sm:justify-self-start sm:mt-[3rem]">
+        <div className="sm:ml-0">
           <h3 className="text-[22.4px] sm:text-[21px] font-bold">
             Entre em Contato:
           </h3>
@@ -28,7 +28,7 @@ function Contact({ marginTop }) {
             Celular: (88) 99609-5309
           </p>
         </div>
-        <hr className="w-[100%] col-span-2 sm:col-span-1 mt-[4.31rem] sm:mt-[1rem] sm:mb-[2rem]" />
+        <hr className="w-full mt-[4.31rem] sm:mt-[0]" />
       </div>
     </section>
   );
