@@ -22,10 +22,10 @@ function Contact({ marginTop }) {
             Entre em Contato:
           </h3>
           <p className="mt-5 text-[17px] sm:text-[16px] sm:mt-[1rem]">
-            E-mail: silveiraosmar2@gmail.com
+            E-mail: email@gmail.com
           </p>
           <p className="mt-4 text-[17px] sm:text-[16px] sm:mt-[1rem] sm:mb-[0.4rem]">
-            Celular: (88) 99609-5309
+            Celular: (99) 99999-9999
           </p>
         </div>
         <hr className="w-full mt-[4.31rem] sm:mt-[0]" />
